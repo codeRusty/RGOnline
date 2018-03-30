@@ -1,0 +1,10 @@
+E:\SourceCode\RGOnline\RGonline.DataAccess\bin\Debug\netstandard2.0\RGOnline.DataModels.dll
+E:\SourceCode\RGOnline\RGonline.DataAccess\bin\Debug\netstandard2.0\RGOnline.DataModels.pdb
+E:\SourceCode\RGOnline\RGonline.DataAccess\obj\Debug\netstandard2.0\RGOnline.DataAccess.csproj.CoreCompileInputs.cache
+E:\SourceCode\RGOnline\RGonline.DataAccess\obj\Debug\netstandard2.0\RGOnline.DataAccess.AssemblyInfoInputs.cache
+E:\SourceCode\RGOnline\RGonline.DataAccess\obj\Debug\netstandard2.0\RGOnline.DataAccess.AssemblyInfo.cs
+E:\SourceCode\RGOnline\RGonline.DataAccess\obj\Debug\netstandard2.0\RGOnline.DataAccess.dll
+E:\SourceCode\RGOnline\RGonline.DataAccess\obj\Debug\netstandard2.0\RGOnline.DataAccess.pdb
+E:\SourceCode\RGOnline\RGonline.DataAccess\bin\Debug\netstandard2.0\RGonline.DataAccess.deps.json
+E:\SourceCode\RGOnline\RGonline.DataAccess\bin\Debug\netstandard2.0\RGonline.DataAccess.dll
+E:\SourceCode\RGOnline\RGonline.DataAccess\bin\Debug\netstandard2.0\RGonline.DataAccess.pdb

@@ -1,0 +1,14 @@
+E:\SourceCode\RGOnline\RGonline.BServices\bin\Debug\netstandard2.0\RGonline.BServices.deps.json
+E:\SourceCode\RGOnline\RGonline.BServices\bin\Debug\netstandard2.0\RGonline.BServices.dll
+E:\SourceCode\RGOnline\RGonline.BServices\bin\Debug\netstandard2.0\RGonline.BServices.pdb
+E:\SourceCode\RGOnline\RGonline.BServices\bin\Debug\netstandard2.0\RGonline.DataAccess.dll
+E:\SourceCode\RGOnline\RGonline.BServices\bin\Debug\netstandard2.0\RGonline.DataModels.dll
+E:\SourceCode\RGOnline\RGonline.BServices\bin\Debug\netstandard2.0\RGonline.DTOs.dll
+E:\SourceCode\RGOnline\RGonline.BServices\bin\Debug\netstandard2.0\RGonline.DataModels.pdb
+E:\SourceCode\RGOnline\RGonline.BServices\bin\Debug\netstandard2.0\RGonline.DataAccess.pdb
+E:\SourceCode\RGOnline\RGonline.BServices\bin\Debug\netstandard2.0\RGonline.DTOs.pdb
+E:\SourceCode\RGOnline\RGonline.BServices\obj\Debug\netstandard2.0\RGonline.BServices.csproj.CoreCompileInputs.cache
+E:\SourceCode\RGOnline\RGonline.BServices\obj\Debug\netstandard2.0\RGonline.BServices.AssemblyInfoInputs.cache
+E:\SourceCode\RGOnline\RGonline.BServices\obj\Debug\netstandard2.0\RGonline.BServices.AssemblyInfo.cs
+E:\SourceCode\RGOnline\RGonline.BServices\obj\Debug\netstandard2.0\RGonline.BServices.dll
+E:\SourceCode\RGOnline\RGonline.BServices\obj\Debug\netstandard2.0\RGonline.BServices.pdb
