@@ -6,6 +6,6 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.2" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RGonline.DataModels\RGonline.DataModels.csproj" />
+    <ProjectReference Include="..\RGonline.DataModels\RGOnline.DataModels.csproj" />
   </ItemGroup>
 </Project>

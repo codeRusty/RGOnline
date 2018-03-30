@@ -6,3 +6,12 @@ E:\SourceCode\RGOnline\RGonline.DataModels\obj\Debug\netstandard2.0\RGOnline.Dat
 E:\SourceCode\RGOnline\RGonline.DataModels\obj\Debug\netstandard2.0\RGOnline.DataModels.AssemblyInfo.cs
 E:\SourceCode\RGOnline\RGonline.DataModels\obj\Debug\netstandard2.0\RGOnline.DataModels.dll
 E:\SourceCode\RGOnline\RGonline.DataModels\obj\Debug\netstandard2.0\RGOnline.DataModels.pdb
+D:\SourceCodes\RGOnline\RGonline.DataModels\bin\Debug\netstandard2.0\RGOnline.DataModels.deps.json
+D:\SourceCodes\RGOnline\RGonline.DataModels\bin\Debug\netstandard2.0\RGOnline.DataModels.dll
+D:\SourceCodes\RGOnline\RGonline.DataModels\bin\Debug\netstandard2.0\RGOnline.DataModels.pdb
+D:\SourceCodes\RGOnline\RGonline.DataModels\obj\Debug\netstandard2.0\RGOnline.DataModels.csproj.CoreCompileInputs.cache
+D:\SourceCodes\RGOnline\RGonline.DataModels\obj\Debug\netstandard2.0\RGOnline.DataModels.AssemblyInfoInputs.cache
+D:\SourceCodes\RGOnline\RGonline.DataModels\obj\Debug\netstandard2.0\RGOnline.DataModels.AssemblyInfo.cs
+D:\SourceCodes\RGOnline\RGonline.DataModels\obj\Debug\netstandard2.0\RGOnline.DataModels.dll
+D:\SourceCodes\RGOnline\RGonline.DataModels\obj\Debug\netstandard2.0\RGOnline.DataModels.pdb
+D:\SourceCodes\RGOnline\RGonline.DataModels\obj\Debug\netstandard2.0\RGOnline.DataModels.csprojResolveAssemblyReference.cache

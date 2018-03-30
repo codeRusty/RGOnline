@@ -6,3 +6,11 @@ E:\SourceCode\RGOnline\RGonline.DTOs\obj\Debug\netstandard2.0\RGOnline.DTOs.Asse
 E:\SourceCode\RGOnline\RGonline.DTOs\obj\Debug\netstandard2.0\RGOnline.DTOs.AssemblyInfo.cs
 E:\SourceCode\RGOnline\RGonline.DTOs\obj\Debug\netstandard2.0\RGOnline.DTOs.dll
 E:\SourceCode\RGOnline\RGonline.DTOs\obj\Debug\netstandard2.0\RGOnline.DTOs.pdb
+D:\SourceCodes\RGOnline\RGonline.DTOs\bin\Debug\netstandard2.0\RGOnline.DTOs.deps.json
+D:\SourceCodes\RGOnline\RGonline.DTOs\bin\Debug\netstandard2.0\RGOnline.DTOs.dll
+D:\SourceCodes\RGOnline\RGonline.DTOs\bin\Debug\netstandard2.0\RGOnline.DTOs.pdb
+D:\SourceCodes\RGOnline\RGonline.DTOs\obj\Debug\netstandard2.0\RGOnline.DTOs.csproj.CoreCompileInputs.cache
+D:\SourceCodes\RGOnline\RGonline.DTOs\obj\Debug\netstandard2.0\RGOnline.DTOs.AssemblyInfoInputs.cache
+D:\SourceCodes\RGOnline\RGonline.DTOs\obj\Debug\netstandard2.0\RGOnline.DTOs.AssemblyInfo.cs
+D:\SourceCodes\RGOnline\RGonline.DTOs\obj\Debug\netstandard2.0\RGOnline.DTOs.dll
+D:\SourceCodes\RGOnline\RGonline.DTOs\obj\Debug\netstandard2.0\RGOnline.DTOs.pdb

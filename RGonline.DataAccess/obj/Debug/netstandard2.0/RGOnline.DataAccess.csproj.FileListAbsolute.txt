@@ -8,3 +8,15 @@ E:\SourceCode\RGOnline\RGonline.DataAccess\obj\Debug\netstandard2.0\RGOnline.Dat
 E:\SourceCode\RGOnline\RGonline.DataAccess\bin\Debug\netstandard2.0\RGonline.DataAccess.deps.json
 E:\SourceCode\RGOnline\RGonline.DataAccess\bin\Debug\netstandard2.0\RGonline.DataAccess.dll
 E:\SourceCode\RGOnline\RGonline.DataAccess\bin\Debug\netstandard2.0\RGonline.DataAccess.pdb
+D:\SourceCodes\RGOnline\RGonline.DataAccess\bin\Debug\netstandard2.0\RGOnline.DataAccess.deps.json
+D:\SourceCodes\RGOnline\RGonline.DataAccess\bin\Debug\netstandard2.0\RGOnline.DataAccess.dll
+D:\SourceCodes\RGOnline\RGonline.DataAccess\bin\Debug\netstandard2.0\RGOnline.DataAccess.pdb
+D:\SourceCodes\RGOnline\RGonline.DataAccess\obj\Debug\netstandard2.0\RGOnline.DataAccess.csproj.CoreCompileInputs.cache
+D:\SourceCodes\RGOnline\RGonline.DataAccess\obj\Debug\netstandard2.0\RGOnline.DataAccess.AssemblyInfoInputs.cache
+D:\SourceCodes\RGOnline\RGonline.DataAccess\obj\Debug\netstandard2.0\RGOnline.DataAccess.AssemblyInfo.cs
+D:\SourceCodes\RGOnline\RGonline.DataAccess\obj\Debug\netstandard2.0\RGOnline.DataAccess.dll
+D:\SourceCodes\RGOnline\RGonline.DataAccess\obj\Debug\netstandard2.0\RGOnline.DataAccess.pdb
+D:\SourceCodes\RGOnline\RGonline.DataAccess\bin\Debug\netstandard2.0\RGOnline.DataModels.dll
+D:\SourceCodes\RGOnline\RGonline.DataAccess\bin\Debug\netstandard2.0\RGOnline.DataModels.pdb
+D:\SourceCodes\RGOnline\RGonline.DataAccess\obj\Debug\netstandard2.0\RGOnline.DataAccess.csprojResolveAssemblyReference.cache
+D:\SourceCodes\RGOnline\RGonline.DataAccess\obj\Debug\netstandard2.0\RGOnline.DataAccess.csproj.CopyComplete

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using RGOnline.BServices;
+using RGonline.BServices;
 
 namespace RGOnline.WebAPI.Controllers
 {
@@ -12,11 +12,11 @@ namespace RGOnline.WebAPI.Controllers
     {
         // GET api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public dynamic Get()
         {
             TestService service = new TestService();
             
-            return new string[] { "value1", "value2" };
+            return service.TestMethod();
         }
 
         // GET api/values/5

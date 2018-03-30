@@ -6,3 +6,11 @@ E:\SourceCode\RGOnline\RGonline.Framework\obj\Debug\netstandard2.0\RGonline.Fram
 E:\SourceCode\RGOnline\RGonline.Framework\obj\Debug\netstandard2.0\RGonline.Framework.AssemblyInfo.cs
 E:\SourceCode\RGOnline\RGonline.Framework\obj\Debug\netstandard2.0\RGonline.Framework.dll
 E:\SourceCode\RGOnline\RGonline.Framework\obj\Debug\netstandard2.0\RGonline.Framework.pdb
+D:\SourceCodes\RGOnline\RGonline.Framework\bin\Debug\netstandard2.0\RGonline.Framework.deps.json
+D:\SourceCodes\RGOnline\RGonline.Framework\bin\Debug\netstandard2.0\RGonline.Framework.dll
+D:\SourceCodes\RGOnline\RGonline.Framework\bin\Debug\netstandard2.0\RGonline.Framework.pdb
+D:\SourceCodes\RGOnline\RGonline.Framework\obj\Debug\netstandard2.0\RGonline.Framework.csproj.CoreCompileInputs.cache
+D:\SourceCodes\RGOnline\RGonline.Framework\obj\Debug\netstandard2.0\RGonline.Framework.AssemblyInfoInputs.cache
+D:\SourceCodes\RGOnline\RGonline.Framework\obj\Debug\netstandard2.0\RGonline.Framework.AssemblyInfo.cs
+D:\SourceCodes\RGOnline\RGonline.Framework\obj\Debug\netstandard2.0\RGonline.Framework.dll
+D:\SourceCodes\RGOnline\RGonline.Framework\obj\Debug\netstandard2.0\RGonline.Framework.pdb
