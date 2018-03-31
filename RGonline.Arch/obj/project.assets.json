@@ -183,9 +183,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SourceCodes\\RGOnline\\RGonline.Arch\\RGOnline.Arch.csproj",
-      "projectName": "RGOnline.Arch",
-      "projectPath": "D:\\SourceCodes\\RGOnline\\RGonline.Arch\\RGOnline.Arch.csproj",
+      "projectUniqueName": "D:\\SourceCodes\\RGOnline\\RGonline.Arch\\RGOnline.Architecture.csproj",
+      "projectName": "RGOnline.Architecture",
+      "projectPath": "D:\\SourceCodes\\RGOnline\\RGonline.Arch\\RGOnline.Architecture.csproj",
       "packagesPath": "C:\\Users\\Sourabh\\.nuget\\packages\\",
       "outputPath": "D:\\SourceCodes\\RGOnline\\RGonline.Arch\\obj\\",
       "projectStyle": "PackageReference",

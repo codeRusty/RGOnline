@@ -1,12 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
-namespace RGonline.DataModels
+namespace RGOnline.DataModels
 {
     public class Products
     {
-        public int ProductId { get; set; }
-        public string ProductName { get; set; }
+        [Key]
+        public long Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public DateTime CreatedOn { get; set; }
+        public DateTime UpdatedOn { get; set; }
+        public string CreatedBy { get; set; }
+        public string UpdatedBy { get; set; }
+        public bool IsActive { get; set; }
     }
 
 }

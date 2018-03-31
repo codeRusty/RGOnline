@@ -2,7 +2,6 @@
 using System.Linq;
 using System.Collections.Generic;
 using RGonline.DataAccess;
-using RGonline.DataModels;
 using RGonline.DTOs;
 
 namespace RGonline.BServices

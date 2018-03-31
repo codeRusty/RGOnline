@@ -14,4 +14,3 @@ D:\SourceCodes\RGOnline\RGonline.Arch\obj\Debug\netstandard2.0\RGonline.Arch.Ass
 D:\SourceCodes\RGOnline\RGonline.Arch\obj\Debug\netstandard2.0\RGonline.Arch.AssemblyInfo.cs
 D:\SourceCodes\RGOnline\RGonline.Arch\obj\Debug\netstandard2.0\RGonline.Arch.dll
 D:\SourceCodes\RGOnline\RGonline.Arch\obj\Debug\netstandard2.0\RGonline.Arch.pdb
-D:\SourceCodes\RGOnline\RGonline.Arch\obj\Debug\netstandard2.0\RGOnline.Arch.csprojResolveAssemblyReference.cache

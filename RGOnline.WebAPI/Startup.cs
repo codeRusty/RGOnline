@@ -8,6 +8,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using RGonline.DataAccess;
+using Microsoft.EntityFrameworkCore;
 
 namespace RGOnline.WebAPI
 {
@@ -24,6 +26,8 @@ namespace RGOnline.WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            var connectionStr = @"Server=IGNP-LPWDEV0004\SQLEXPRESS;Database=WebApiDb;User Id=sa;Password=$ourabh@1;Trusted_Connection=True;";
+            services.AddDbContext<RGOnlineContext>(options => options.UseSqlServer(connectionStr, m => m.MigrationsAssembly("RGOnline.WebAPI")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

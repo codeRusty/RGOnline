@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RGOnline.Arch", "RGonline.Arch\RGOnline.Arch.csproj", "{B5A33881-676B-481A-94AC-D28CBFA1C803}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RGOnline.Architecture", "RGonline.Arch\RGOnline.Architecture.csproj", "{B5A33881-676B-481A-94AC-D28CBFA1C803}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RGOnline.Framework", "RGonline.Framework\RGOnline.Framework.csproj", "{BC62E0DF-618D-4A9C-8CBC-797E45F83917}"
 EndProject
@@ -15,6 +15,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RGOnline.BServices", "RGonline.BServices\RGOnline.BServices.csproj", "{CD4B44D6-715B-4A2B-9CA2-10BBA1B08629}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RGOnline.WebAPI", "RGOnline.WebAPI\RGOnline.WebAPI.csproj", "{5ECE9158-1F07-45CD-B292-75F447D00365}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RGOnline.Admin.WebAPI", "RGOnline.Admin.WebAPI\RGOnline.Admin.WebAPI.csproj", "{078C9ED3-0005-4CDB-A289-AD62F1399F77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RGOnline.Admin.Web", "RGOnline.Admin.Web\RGOnline.Admin.Web.csproj", "{F6A699EF-BDB5-46C1-9978-A7AE676C5951}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -110,6 +114,30 @@ Global
 		{5ECE9158-1F07-45CD-B292-75F447D00365}.Release|x64.Build.0 = Release|Any CPU
 		{5ECE9158-1F07-45CD-B292-75F447D00365}.Release|x86.ActiveCfg = Release|Any CPU
 		{5ECE9158-1F07-45CD-B292-75F447D00365}.Release|x86.Build.0 = Release|Any CPU
+		{078C9ED3-0005-4CDB-A289-AD62F1399F77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{078C9ED3-0005-4CDB-A289-AD62F1399F77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{078C9ED3-0005-4CDB-A289-AD62F1399F77}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{078C9ED3-0005-4CDB-A289-AD62F1399F77}.Debug|x64.Build.0 = Debug|Any CPU
+		{078C9ED3-0005-4CDB-A289-AD62F1399F77}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{078C9ED3-0005-4CDB-A289-AD62F1399F77}.Debug|x86.Build.0 = Debug|Any CPU
+		{078C9ED3-0005-4CDB-A289-AD62F1399F77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{078C9ED3-0005-4CDB-A289-AD62F1399F77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{078C9ED3-0005-4CDB-A289-AD62F1399F77}.Release|x64.ActiveCfg = Release|Any CPU
+		{078C9ED3-0005-4CDB-A289-AD62F1399F77}.Release|x64.Build.0 = Release|Any CPU
+		{078C9ED3-0005-4CDB-A289-AD62F1399F77}.Release|x86.ActiveCfg = Release|Any CPU
+		{078C9ED3-0005-4CDB-A289-AD62F1399F77}.Release|x86.Build.0 = Release|Any CPU
+		{F6A699EF-BDB5-46C1-9978-A7AE676C5951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6A699EF-BDB5-46C1-9978-A7AE676C5951}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6A699EF-BDB5-46C1-9978-A7AE676C5951}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F6A699EF-BDB5-46C1-9978-A7AE676C5951}.Debug|x64.Build.0 = Debug|Any CPU
+		{F6A699EF-BDB5-46C1-9978-A7AE676C5951}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F6A699EF-BDB5-46C1-9978-A7AE676C5951}.Debug|x86.Build.0 = Debug|Any CPU
+		{F6A699EF-BDB5-46C1-9978-A7AE676C5951}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6A699EF-BDB5-46C1-9978-A7AE676C5951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6A699EF-BDB5-46C1-9978-A7AE676C5951}.Release|x64.ActiveCfg = Release|Any CPU
+		{F6A699EF-BDB5-46C1-9978-A7AE676C5951}.Release|x64.Build.0 = Release|Any CPU
+		{F6A699EF-BDB5-46C1-9978-A7AE676C5951}.Release|x86.ActiveCfg = Release|Any CPU
+		{F6A699EF-BDB5-46C1-9978-A7AE676C5951}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RGonline.Arch
+namespace RGonline.Architecture
 {
     public class Class1
     {
