@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using RGOnline.DataModels;
 
-namespace RGonline.DataAccess
+namespace RGOnline.DataAccess
 {
     public class RGOnlineContext : DbContext
     {
+        public RGOnlineContext() { }
         public RGOnlineContext(DbContextOptions<RGOnlineContext> options)
             : base(options)
         { }

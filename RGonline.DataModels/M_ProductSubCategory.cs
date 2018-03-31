@@ -7,6 +7,7 @@ namespace RGOnline.DataModels
 {
     public class M_ProductSubCategory
     {
+        public M_ProductSubCategory() { }
         [Key]
         public long Id { get; set; }
         public string ProductSubCategory { get; set; }

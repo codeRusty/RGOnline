@@ -14,3 +14,4 @@ D:\SourceCodes\RGOnline\RGonline.Framework\obj\Debug\netstandard2.0\RGonline.Fra
 D:\SourceCodes\RGOnline\RGonline.Framework\obj\Debug\netstandard2.0\RGonline.Framework.AssemblyInfo.cs
 D:\SourceCodes\RGOnline\RGonline.Framework\obj\Debug\netstandard2.0\RGonline.Framework.dll
 D:\SourceCodes\RGOnline\RGonline.Framework\obj\Debug\netstandard2.0\RGonline.Framework.pdb
+D:\SourceCodes\RGOnline\RGonline.Framework\obj\Debug\netstandard2.0\RGOnline.Framework.csprojResolveAssemblyReference.cache

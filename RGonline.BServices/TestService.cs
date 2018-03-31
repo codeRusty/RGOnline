@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
-using RGonline.DataAccess;
+using RGOnline.DataAccess;
 using RGonline.DTOs;
 
 namespace RGonline.BServices

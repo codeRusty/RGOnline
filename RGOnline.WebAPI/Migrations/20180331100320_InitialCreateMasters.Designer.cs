@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.EntityFrameworkCore.Storage.Internal;
-using RGonline.DataAccess;
+using RGOnline.DataAccess;
 using System;
 
 namespace RGOnline.WebAPI.Migrations
