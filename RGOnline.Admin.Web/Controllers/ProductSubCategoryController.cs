@@ -10,22 +10,23 @@ using RGOnline.DataModels;
 
 namespace RGOnline.Admin.Web.Controllers
 {
-    public class ProductCategoryController : Controller
+    public class ProductSubCategoryController : Controller
     {
         private readonly RGOnlineContext _context;
 
-        public ProductCategoryController(RGOnlineContext context)
+        public ProductSubCategoryController(RGOnlineContext context)
         {
             _context = context;
         }
 
-        // GET: ProductCategory
+        // GET: ProductSubCategory
         public async Task<IActionResult> Index()
         {
-            return View(await _context.M_ProductCategory.ToListAsync());
+            var rGOnlineContext = _context.M_ProductSubCategory.Include(m => m.M_ProductCategory);
+            return View(await rGOnlineContext.ToListAsync());
         }
 
-        // GET: ProductCategory/Details/5
+        // GET: ProductSubCategory/Details/5
         public async Task<IActionResult> Details(long? id)
         {
             if (id == null)
@@ -33,39 +34,42 @@ namespace RGOnline.Admin.Web.Controllers
                 return NotFound();
             }
 
-            var m_ProductCategory = await _context.M_ProductCategory
+            var m_ProductSubCategory = await _context.M_ProductSubCategory
+                .Include(m => m.M_ProductCategory)
                 .SingleOrDefaultAsync(m => m.Id == id);
-            if (m_ProductCategory == null)
+            if (m_ProductSubCategory == null)
             {
                 return NotFound();
             }
 
-            return View(m_ProductCategory);
+            return View(m_ProductSubCategory);
         }
 
-        // GET: ProductCategory/Create
+        // GET: ProductSubCategory/Create
         public IActionResult Create()
         {
+            ViewData["ProductCategoryID"] = new SelectList(_context.M_ProductCategory, "Id", "Id");
             return View();
         }
 
-        // POST: ProductCategory/Create
+        // POST: ProductSubCategory/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ProductCategory,Description,CreatedOn,UpdatedOn,CreatedBy,UpdatedBy,IsActive")] M_ProductCategory m_ProductCategory)
+        public async Task<IActionResult> Create([Bind("Id,ProductSubCategory,Description,CreatedOn,UpdatedOn,CreatedBy,UpdatedBy,IsActive,ProductCategoryID")] M_ProductSubCategory m_ProductSubCategory)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(m_ProductCategory);
+                _context.Add(m_ProductSubCategory);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(m_ProductCategory);
+            ViewData["ProductCategoryID"] = new SelectList(_context.M_ProductCategory, "Id", "Id", m_ProductSubCategory.ProductCategoryID);
+            return View(m_ProductSubCategory);
         }
 
-        // GET: ProductCategory/Edit/5
+        // GET: ProductSubCategory/Edit/5
         public async Task<IActionResult> Edit(long? id)
         {
             if (id == null)
@@ -73,22 +77,23 @@ namespace RGOnline.Admin.Web.Controllers
                 return NotFound();
             }
 
-            var m_ProductCategory = await _context.M_ProductCategory.SingleOrDefaultAsync(m => m.Id == id);
-            if (m_ProductCategory == null)
+            var m_ProductSubCategory = await _context.M_ProductSubCategory.SingleOrDefaultAsync(m => m.Id == id);
+            if (m_ProductSubCategory == null)
             {
                 return NotFound();
             }
-            return View(m_ProductCategory);
+            ViewData["ProductCategoryID"] = new SelectList(_context.M_ProductCategory, "Id", "Id", m_ProductSubCategory.ProductCategoryID);
+            return View(m_ProductSubCategory);
         }
 
-        // POST: ProductCategory/Edit/5
+        // POST: ProductSubCategory/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(long id, [Bind("Id,ProductCategory,Description,CreatedOn,UpdatedOn,CreatedBy,UpdatedBy,IsActive")] M_ProductCategory m_ProductCategory)
+        public async Task<IActionResult> Edit(long id, [Bind("Id,ProductSubCategory,Description,CreatedOn,UpdatedOn,CreatedBy,UpdatedBy,IsActive,ProductCategoryID")] M_ProductSubCategory m_ProductSubCategory)
         {
-            if (id != m_ProductCategory.Id)
+            if (id != m_ProductSubCategory.Id)
             {
                 return NotFound();
             }
@@ -97,12 +102,12 @@ namespace RGOnline.Admin.Web.Controllers
             {
                 try
                 {
-                    _context.Update(m_ProductCategory);
+                    _context.Update(m_ProductSubCategory);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!M_ProductCategoryExists(m_ProductCategory.Id))
+                    if (!M_ProductSubCategoryExists(m_ProductSubCategory.Id))
                     {
                         return NotFound();
                     }
@@ -113,10 +118,11 @@ namespace RGOnline.Admin.Web.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(m_ProductCategory);
+            ViewData["ProductCategoryID"] = new SelectList(_context.M_ProductCategory, "Id", "Id", m_ProductSubCategory.ProductCategoryID);
+            return View(m_ProductSubCategory);
         }
 
-        // GET: ProductCategory/Delete/5
+        // GET: ProductSubCategory/Delete/5
         public async Task<IActionResult> Delete(long? id)
         {
             if (id == null)
@@ -124,30 +130,31 @@ namespace RGOnline.Admin.Web.Controllers
                 return NotFound();
             }
 
-            var m_ProductCategory = await _context.M_ProductCategory
+            var m_ProductSubCategory = await _context.M_ProductSubCategory
+                .Include(m => m.M_ProductCategory)
                 .SingleOrDefaultAsync(m => m.Id == id);
-            if (m_ProductCategory == null)
+            if (m_ProductSubCategory == null)
             {
                 return NotFound();
             }
 
-            return View(m_ProductCategory);
+            return View(m_ProductSubCategory);
         }
 
-        // POST: ProductCategory/Delete/5
+        // POST: ProductSubCategory/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(long id)
         {
-            var m_ProductCategory = await _context.M_ProductCategory.SingleOrDefaultAsync(m => m.Id == id);
-            _context.M_ProductCategory.Remove(m_ProductCategory);
+            var m_ProductSubCategory = await _context.M_ProductSubCategory.SingleOrDefaultAsync(m => m.Id == id);
+            _context.M_ProductSubCategory.Remove(m_ProductSubCategory);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool M_ProductCategoryExists(long id)
+        private bool M_ProductSubCategoryExists(long id)
         {
-            return _context.M_ProductCategory.Any(e => e.Id == id);
+            return _context.M_ProductSubCategory.Any(e => e.Id == id);
         }
     }
 }

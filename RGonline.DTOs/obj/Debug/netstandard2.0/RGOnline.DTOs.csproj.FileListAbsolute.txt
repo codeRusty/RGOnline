@@ -14,3 +14,4 @@ D:\SourceCodes\RGOnline\RGonline.DTOs\obj\Debug\netstandard2.0\RGOnline.DTOs.Ass
 D:\SourceCodes\RGOnline\RGonline.DTOs\obj\Debug\netstandard2.0\RGOnline.DTOs.AssemblyInfo.cs
 D:\SourceCodes\RGOnline\RGonline.DTOs\obj\Debug\netstandard2.0\RGOnline.DTOs.dll
 D:\SourceCodes\RGOnline\RGonline.DTOs\obj\Debug\netstandard2.0\RGOnline.DTOs.pdb
+D:\SourceCodes\RGOnline\RGonline.DTOs\obj\Debug\netstandard2.0\RGOnline.DTOs.csprojResolveAssemblyReference.cache

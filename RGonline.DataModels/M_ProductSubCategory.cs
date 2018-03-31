@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace RGOnline.DataModels
 {
     public class M_ProductSubCategory
     {
-        public M_ProductSubCategory() { }
         [Key]
         public long Id { get; set; }
         public string ProductSubCategory { get; set; }
@@ -17,6 +17,11 @@ namespace RGOnline.DataModels
         public string CreatedBy { get; set; }
         public string UpdatedBy { get; set; }
         public bool IsActive { get; set; }
+
+        public long ProductCategoryID { get; set; }
+        [ForeignKey("ProductCategoryID")]
         public M_ProductCategory M_ProductCategory { get; set; }
+
+
     }
 }

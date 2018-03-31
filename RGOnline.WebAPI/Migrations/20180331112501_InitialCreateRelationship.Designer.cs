@@ -11,9 +11,10 @@ using System;
 namespace RGOnline.WebAPI.Migrations
 {
     [DbContext(typeof(RGOnlineContext))]
-    partial class RGOnlineContextModelSnapshot : ModelSnapshot
+    [Migration("20180331112501_InitialCreateRelationship")]
+    partial class InitialCreateRelationship
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -107,7 +108,7 @@ namespace RGOnline.WebAPI.Migrations
 
                     b.Property<bool>("IsActive");
 
-                    b.Property<long>("ProductCategoryID");
+                    b.Property<long?>("M_ProductCategoryId");
 
                     b.Property<string>("ProductSubCategory");
 
@@ -117,7 +118,7 @@ namespace RGOnline.WebAPI.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductCategoryID");
+                    b.HasIndex("M_ProductCategoryId");
 
                     b.ToTable("M_ProductSubCategory");
                 });
@@ -174,8 +175,7 @@ namespace RGOnline.WebAPI.Migrations
                 {
                     b.HasOne("RGOnline.DataModels.M_ProductCategory", "M_ProductCategory")
                         .WithMany("M_ProductSubCategorys")
-                        .HasForeignKey("ProductCategoryID")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .HasForeignKey("M_ProductCategoryId");
                 });
 #pragma warning restore 612, 618
         }

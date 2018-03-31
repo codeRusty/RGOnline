@@ -11,9 +11,10 @@ using System;
 namespace RGOnline.WebAPI.Migrations
 {
     [DbContext(typeof(RGOnlineContext))]
-    partial class RGOnlineContextModelSnapshot : ModelSnapshot
+    [Migration("20180331114024_AddRelationship")]
+    partial class AddRelationship
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

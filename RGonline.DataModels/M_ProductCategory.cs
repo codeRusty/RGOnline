@@ -20,6 +20,6 @@ namespace RGOnline.DataModels
         public string CreatedBy { get; set; }
         public string UpdatedBy { get; set; }
         public bool IsActive { get; set; }
-        public List<M_ProductSubCategory> M_ProductSubCategory { get; set; }
+        public ICollection<M_ProductSubCategory> M_ProductSubCategorys { get; set; }
     }
 }
