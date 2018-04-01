@@ -26,7 +26,7 @@ namespace RGOnline.WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            var connectionStr = @"Server=IGNP-LPWDEV0004\SQLEXPRESS;Database=WebApiDb;User Id=sa;Password=$ourabh@1;Trusted_Connection=True;";
+            var connectionStr = @"Server=IGNP-LPWDEV0004\SQLEXPRESS;Database=RGOnline;User Id=sa;Password=$ourabh@1;Trusted_Connection=True;";
             services.AddDbContext<RGOnlineContext>(options => options.UseSqlServer(connectionStr, m => m.MigrationsAssembly("RGOnline.WebAPI")));
         }
 

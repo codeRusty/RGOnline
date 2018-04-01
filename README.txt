@@ -20,8 +20,10 @@ Install Visual Studio Code. During the course of this article, you also install 
 
 ## Add reference  : dotnet add RGonline.BService/RGonline.BService.csproj reference RGonline.DataModels/RGonline.DataModels.csproj
 
+## Code First : Add-Migration [Name] + then + Update-database
 
 
+## Add DB Frist : Scaffold-DbContext "Server=DESKTOP-FIUUHBV\SQLEXPRESS;Database=RGOnline;User Id=sa;Password=$ourabh@1;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
 
 ------------------------------------------------------------
 

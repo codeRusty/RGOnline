@@ -23,7 +23,7 @@ namespace RGOnline.Admin.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
-            services.AddDbContext<RGOnline.DataAccess.RGOnlineContext>(options => options.UseSqlServer(@"Server=DESKTOP-FIUUHBV\SQLEXPRESS;Database=WebApiDb;User Id=sa;Password=$ourabh@1;Trusted_Connection=True;"));
+            services.AddDbContext<RGOnline.DataAccess.RGOnlineContext>(options => options.UseSqlServer(@"Server=DESKTOP-FIUUHBV\SQLEXPRESS;Database=RGOnline;User Id=sa;Password=$ourabh@1;Trusted_Connection=True;"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
