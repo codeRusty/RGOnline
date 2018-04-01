@@ -6,6 +6,10 @@ namespace RGOnline.DataAccess
 {
     public partial class RGOnlineContext : DbContext
     {
+
+        public RGOnlineContext(DbContextOptions<RGOnlineContext> options)
+               : base(options)
+        { }
         public virtual DbSet<Address> Address { get; set; }
         public virtual DbSet<Cart> Cart { get; set; }
         public virtual DbSet<CartItem> CartItem { get; set; }
