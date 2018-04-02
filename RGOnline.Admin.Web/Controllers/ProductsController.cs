@@ -22,7 +22,7 @@ namespace RGOnline.Admin.Web.Controllers
         // GET: Products
         public async Task<IActionResult> Index()
         {
-            var rGOnlineContext = _context.Product.Include(p => p.School).Include(p => p.Season).Include(p => p.Size);
+            var rGOnlineContext = _context.Product.Include(p => p.ProductSubCategory).Include(p => p.Season).Include(p => p.Size);
             return View(await rGOnlineContext.ToListAsync());
         }
 
@@ -35,7 +35,7 @@ namespace RGOnline.Admin.Web.Controllers
             }
 
             var product = await _context.Product
-                .Include(p => p.School)
+                .Include(p => p.ProductSubCategory)
                 .Include(p => p.Season)
                 .Include(p => p.Size)
                 .SingleOrDefaultAsync(m => m.Id == id);
@@ -50,7 +50,7 @@ namespace RGOnline.Admin.Web.Controllers
         // GET: Products/Create
         public IActionResult Create()
         {
-            ViewData["SchoolId"] = new SelectList(_context.School, "Id", "Name");
+            ViewData["ProductSubCategoryId"] = new SelectList(_context.MProductSubCategory, "Id", "Id");
             ViewData["SeasonId"] = new SelectList(_context.Season, "Id", "Name");
             ViewData["SizeId"] = new SelectList(_context.Size, "Id", "Name");
             return View();
@@ -61,7 +61,7 @@ namespace RGOnline.Admin.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Description,CreatedOn,CreatedBy,UpdatedOn,UpdatedBy,Sku,SalesFee,Quantity,IsActive,SchoolId,SizeId,SeasonId")] Product product)
+        public async Task<IActionResult> Create([Bind("Id,Name,Description,CreatedOn,CreatedBy,UpdatedOn,UpdatedBy,Sku,SalesFee,Quantity,IsActive,ProductSubCategoryId,SizeId,SeasonId")] Product product)
         {
             if (ModelState.IsValid)
             {
@@ -69,7 +69,7 @@ namespace RGOnline.Admin.Web.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["SchoolId"] = new SelectList(_context.School, "Id", "Name", product.SchoolId);
+            ViewData["ProductSubCategoryId"] = new SelectList(_context.MProductSubCategory, "Id", "Id", product.ProductSubCategoryId);
             ViewData["SeasonId"] = new SelectList(_context.Season, "Id", "Name", product.SeasonId);
             ViewData["SizeId"] = new SelectList(_context.Size, "Id", "Name", product.SizeId);
             return View(product);
@@ -88,7 +88,7 @@ namespace RGOnline.Admin.Web.Controllers
             {
                 return NotFound();
             }
-            ViewData["SchoolId"] = new SelectList(_context.School, "Id", "Name", product.SchoolId);
+            ViewData["ProductSubCategoryId"] = new SelectList(_context.MProductSubCategory, "Id", "Id", product.ProductSubCategoryId);
             ViewData["SeasonId"] = new SelectList(_context.Season, "Id", "Name", product.SeasonId);
             ViewData["SizeId"] = new SelectList(_context.Size, "Id", "Name", product.SizeId);
             return View(product);
@@ -99,7 +99,7 @@ namespace RGOnline.Admin.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(long id, [Bind("Id,Name,Description,CreatedOn,CreatedBy,UpdatedOn,UpdatedBy,Sku,SalesFee,Quantity,IsActive,SchoolId,SizeId,SeasonId")] Product product)
+        public async Task<IActionResult> Edit(long id, [Bind("Id,Name,Description,CreatedOn,CreatedBy,UpdatedOn,UpdatedBy,Sku,SalesFee,Quantity,IsActive,ProductSubCategoryId,SizeId,SeasonId")] Product product)
         {
             if (id != product.Id)
             {
@@ -126,7 +126,7 @@ namespace RGOnline.Admin.Web.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["SchoolId"] = new SelectList(_context.School, "Id", "Name", product.SchoolId);
+            ViewData["ProductSubCategoryId"] = new SelectList(_context.MProductSubCategory, "Id", "Id", product.ProductSubCategoryId);
             ViewData["SeasonId"] = new SelectList(_context.Season, "Id", "Name", product.SeasonId);
             ViewData["SizeId"] = new SelectList(_context.Size, "Id", "Name", product.SizeId);
             return View(product);
@@ -141,7 +141,7 @@ namespace RGOnline.Admin.Web.Controllers
             }
 
             var product = await _context.Product
-                .Include(p => p.School)
+                .Include(p => p.ProductSubCategory)
                 .Include(p => p.Season)
                 .Include(p => p.Size)
                 .SingleOrDefaultAsync(m => m.Id == id);

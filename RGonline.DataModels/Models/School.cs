@@ -5,11 +5,6 @@ namespace RGOnline.DataModels.Models
 {
     public partial class School
     {
-        public School()
-        {
-            Product = new HashSet<Product>();
-        }
-
         public long Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
@@ -21,6 +16,5 @@ namespace RGOnline.DataModels.Models
         public bool IsActive { get; set; }
 
         public Address Address { get; set; }
-        public ICollection<Product> Product { get; set; }
     }
 }

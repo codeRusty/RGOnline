@@ -22,11 +22,11 @@ namespace RGOnline.DataModels.Models
         public decimal SalesFee { get; set; }
         public int Quantity { get; set; }
         public bool IsActive { get; set; }
-        public long SchoolId { get; set; }
+        public long ProductSubCategoryId { get; set; }
         public long SizeId { get; set; }
         public long SeasonId { get; set; }
 
-        public School School { get; set; }
+        public MProductSubCategory ProductSubCategory { get; set; }
         public Season Season { get; set; }
         public Size Size { get; set; }
         public ICollection<CartItem> CartItem { get; set; }

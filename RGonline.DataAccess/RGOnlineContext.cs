@@ -4,16 +4,21 @@ using RGOnline.DataModels.Models;
 
 namespace RGOnline.DataAccess
 {
+
+
+
     public partial class RGOnlineContext : DbContext
     {
-
         public RGOnlineContext(DbContextOptions<RGOnlineContext> options)
-               : base(options)
+             : base(options)
         { }
+
         public virtual DbSet<Address> Address { get; set; }
         public virtual DbSet<Cart> Cart { get; set; }
         public virtual DbSet<CartItem> CartItem { get; set; }
         public virtual DbSet<Customer> Customer { get; set; }
+        public virtual DbSet<MProductCategory> MProductCategory { get; set; }
+        public virtual DbSet<MProductSubCategory> MProductSubCategory { get; set; }
         public virtual DbSet<Order> Order { get; set; }
         public virtual DbSet<OrderItem> OrderItem { get; set; }
         public virtual DbSet<Product> Product { get; set; }
@@ -25,7 +30,7 @@ namespace RGOnline.DataAccess
         {
             if (!optionsBuilder.IsConfigured)
             {
-                #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
                 optionsBuilder.UseSqlServer(@"Server=DESKTOP-FIUUHBV\SQLEXPRESS;Database=RGOnline;User Id=sa;Password=@1;Trusted_Connection=True;");
             }
         }
@@ -124,6 +129,24 @@ namespace RGOnline.DataAccess
                     .HasConstraintName("FK_Customer_Address_1");
             });
 
+            modelBuilder.Entity<MProductCategory>(entity =>
+            {
+                entity.ToTable("M_ProductCategory");
+            });
+
+            modelBuilder.Entity<MProductSubCategory>(entity =>
+            {
+                entity.ToTable("M_ProductSubCategory");
+
+                entity.Property(e => e.ProductCategoryId).HasColumnName("ProductCategoryID");
+
+                entity.HasOne(d => d.ProductCategory)
+                    .WithMany(p => p.MProductSubCategory)
+                    .HasForeignKey(d => d.ProductCategoryId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_M_ProductSubCategory_M_ProductCategory");
+            });
+
             modelBuilder.Entity<Order>(entity =>
             {
                 entity.Property(e => e.Id).ValueGeneratedNever();
@@ -194,11 +217,11 @@ namespace RGOnline.DataAccess
 
                 entity.Property(e => e.UpdatedOn).HasColumnType("datetime");
 
-                entity.HasOne(d => d.School)
+                entity.HasOne(d => d.ProductSubCategory)
                     .WithMany(p => p.Product)
-                    .HasForeignKey(d => d.SchoolId)
+                    .HasForeignKey(d => d.ProductSubCategoryId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_Product_School");
+                    .HasConstraintName("FK_Product_SubCategory");
 
                 entity.HasOne(d => d.Season)
                     .WithMany(p => p.Product)
@@ -284,4 +307,7 @@ namespace RGOnline.DataAccess
             });
         }
     }
+
+
+  
 }
